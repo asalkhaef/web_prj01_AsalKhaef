@@ -504,3 +504,133 @@
   white-space: nowrap;
 }
 /* END HEADER */
+/* START MAN-IMG */
+.poster-container,
+.poster-container-child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100%;
+}
+.poster-container-child {
+  width: 1191px;
+  row-gap: 20px;
+}
+.poster-container {
+  width: 1389px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.shop-now-icon,
+.shop-now-button,
+.poster-left-container-child,
+.poster-left-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.poster-left-container-child,
+.poster-left-container {
+  flex-direction: column;
+  max-width: 100%;
+}
+.poster-left-container {
+  width: 544px;
+  padding: 140px 0 0;
+  box-sizing: border-box;
+  min-width: 544px;
+}
+.poster-left-container-child {
+  align-self: stretch;
+  gap: 38px;
+  flex-shrink: 0;
+  /* debug_commit: f6aba90;*/
+}
+.poster-left-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  max-width: 100%;
+}
+.poster-title {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 110px;
+  font-weight: 700;
+  font-family: inherit;
+  z-index: 2;
+}
+.title-text {
+  margin: 0;
+}
+.title-paragraph {
+  width: 514px;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  display: inline-block;
+  max-width: 100%;
+  z-index: 2;
+}
+.shop-now-button {
+  cursor: pointer;
+  border: 0;
+  padding: 13px 20px;
+  background-color: #1c4e8e;
+  border-radius: 10px;
+  flex-direction: row;
+  gap: 10px;
+  z-index: 2;
+}
+.shop-now-button-child {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Montserrat;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  min-width: 83px;
+}
+.shop-now-icon {
+  height: 27px;
+  flex-direction: column;
+  padding: 3px 0 0;
+  box-sizing: border-box;
+}
+.poster-right-container {
+  height: 814px;
+  flex: 1;
+  position: relative;
+  min-width: 421px;
+  flex-shrink: 0;
+  /* debug_commit: f6aba90; */
+  max-width: 100%;
+}
+.poster-right-img-container {
+  position: absolute;
+  top: 73px;
+  left: -11px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 658px;
+  height: 658px;
+  z-index: 2;
+}
+.young-handsome-happy-smiling-m-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 26px;
+  max-height: 100%;
+  width: 599px;
+  object-fit: cover;
+  z-index: 3;
+}
