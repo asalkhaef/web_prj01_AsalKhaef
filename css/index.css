@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.main-section {
+.main-top-section {
   align-self: stretch;
   position: relative;
 }
-.main-section {
+.main-top-section {
   background-color: rgba(165, 169, 172, 0.1);
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@
   color: #101316;
   font-family: Montserrat;
 }
-.main-section-child {
+.main-top-section-child {
   align-self: stretch;
   height: 974px;
   position: relative;
@@ -245,6 +245,7 @@
   justify-content: center;
 }
 
+.login-button:hover,
 .search-button:hover {
   background-color: #4275b5;
 }
