@@ -1304,3 +1304,120 @@
   font-size: 16px;
   line-height: 30px;
 }
+/* END ADVANTAGE */
+/* START FOOTER */
+.encoder,
+.footer,
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.encoder {
+  width: 1140px;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 100%;
+  text-align: center;
+}
+.footer,
+.home-page {
+  position: relative;
+}
+.footer {
+  align-self: stretch;
+  align-items: center;
+  padding: 30px 20px 16px;
+  box-sizing: border-box;
+  gap: 64px;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Montserrat;
+  background-color: #1c4e8e;
+}
+.subscribe {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  width: 322px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+.footer-items {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  width: 1140px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-column1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 222px;
+  gap: 30px;
+  flex-direction: column;
+  flex: 1;
+}
+.footer-logo {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 202.8px;
+  height: 40px;
+  z-index: 1;
+}
+.footer-column1-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 16px;
+  flex-direction: column;
+}
+.footer-items {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  z-index: 1;
+}
+.footer-information-items,
+.footer-information-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 1;
+}
+.information-column-items {
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 100px;
+}
+.subscribe {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+  width: 322px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  z-index: 1;
+}
+.validator {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: rgba(165, 169, 172, 0.2);
+  z-index: 1;
+}
