@@ -404,6 +404,13 @@
   overflow: hidden;
   flex-shrink: 0;
 }
+.huge-iconarrowsoutlinedirec-v2 {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
 .about-us,
 .blog,
 .contact-us {
@@ -1245,4 +1252,55 @@
   flex-direction: column;
   padding: 3px 0 0;
   box-sizing: border-box;
+}
+/* END ADVERTISEMENT */
+/* START ADVANTAGE */
+.advantage-section,
+.advantage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.advantage-container {
+  width: 1140px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.advantage-section {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 18px;
+  color: #101316;
+  font-family: Montserrat;
+}
+.advantage-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 117px;
+  width: 276px;
+  gap: 16px;
+}
+.advantage-items-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  gap: 5px;
+}
+.advantage-items-text-line1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 30px;
+}
+.advantage-items-text-line2 {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
 }
