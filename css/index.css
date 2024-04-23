@@ -11,8 +11,8 @@
   align-items: flex-start;
   gap: 100px;
   letter-spacing: normal;
+  position: relative;
 }
-
 .shop-by-category-title,
 .main-top-section {
   align-self: stretch;
@@ -1529,4 +1529,3 @@
   justify-content: flex-start;
   z-index: 1;
 }
-
