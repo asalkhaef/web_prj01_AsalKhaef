@@ -32,3 +32,165 @@
   background-color: white;
   border-radius: 10px;
 }
+
+/* sign-in part */
+.login-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 30px;
+}
+.login-title {
+  align-self: stretch;
+  position: relative;
+  line-height: 42px;
+}
+.login-title-sec {
+  font-size: 16px;
+  line-height: 30px;
+  color: #a5a9ac;
+}
+.login-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.login-mid-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.login-mid-down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #fff;
+}
+.login-mid-input {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.login-input {
+  align-self: stretch;
+  position: relative;
+  height: 80px;
+}
+.login-text {
+  line-height: 30px;
+  display: inline-block;
+}
+.login-label,
+.login-textbox {
+  width: 100%;
+}
+.login-textbox {
+  border-radius: 10px;
+  border: 1px solid #1c4e8e;
+  box-sizing: border-box;
+  padding: 6px 12px;
+}
+.login-label {
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+}
+.login-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px 0 0;
+  gap: 10px;
+}
+.checkbox-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.state-icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.login-btn {
+  width: 380px;
+  border-radius: 10px;
+  background-color: #1c4e8e;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.login-btn-light {
+  background-color: #fff;
+  color: black;
+  border: black solid 1px;
+}
+.signin-ways-btn {
+  width: 380px;
+  border-radius: 10px;
+  border: 1px solid rgba(165, 169, 172, 0.2);
+  box-sizing: border-box;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.signin-ways-btn2 {
+  position: relative;
+  line-height: 30px;
+}
+.or-login-with-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.or-login-line {
+  width: 132px;
+  position: relative;
+  background-color: rgba(165, 169, 172, 0.2);
+  height: 1px;
+}
+.login-title2 {
+  font-size: 16px;
+  color: #a5a9ac;
+}
+/* sign-up part */
