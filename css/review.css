@@ -1,79 +1,79 @@
 .review-form {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    flex-direction: column;
-    box-sizing: border-box;
-    gap: 30px;
-    max-width: 100%;
-    padding: 0 20px 50px;
-  }
-  .review-list-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;
-    justify-content: flex-start;
-    gap: 16px;
-    padding: 0 0 20px;
-    box-sizing: border-box;
-    gap: 2px;
-    max-width: 100%;
-  }
-  .top-line-space {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 0 18px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  .top-line {
-    height: 3px;
-    flex: 1;
-    position: relative;
-    background-color: rgba(165, 169, 172, 0.2);
-    max-width: 100%;
-  }
-  .top-line-blue {
-    position: absolute;
-    top: 0;
-    left: 340px;
-    background-color: #1c4e8e;
-    width: 87px;
-    height: 3px;
-    z-index: 1;
-  }
-  .customer-reviews-title-div {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 0 18px;
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-  .customer-reviews-title {
-    flex: 1;
-    position: relative;
-    font-size: 20px;
-    line-height: 30px;
-    display: inline-block;
-    color: #101316;
-    text-align: left;
-    max-width: 100%;
-  }
-  .commenter-info-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0 0 8px;
-  }
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 30px;
+  max-width: 100%;
+  padding: 0 20px 50px;
+}
+.review-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 0 0 20px;
+  box-sizing: border-box;
+  gap: 2px;
+  max-width: 100%;
+}
+.top-line-space {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 18px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.top-line {
+  height: 3px;
+  flex: 1;
+  position: relative;
+  background-color: rgba(165, 169, 172, 0.2);
+  max-width: 100%;
+}
+.top-line-blue {
+  position: absolute;
+  top: 0;
+  left: 340px;
+  background-color: #1c4e8e;
+  width: 87px;
+  height: 3px;
+  z-index: 1;
+}
+.customer-reviews-title-div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 18px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.customer-reviews-title {
+  flex: 1;
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  display: inline-block;
+  color: #101316;
+  text-align: left;
+  max-width: 100%;
+}
+.commenter-info-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0 8px;
+}
 
 .commenter {
   display: flex;
@@ -83,42 +83,42 @@
   gap: 10px;
 }
 .commenter-img {
-    height: 50px;
-    width: 50px;
-    position: relative;
-    border-radius: 50%;
-    object-fit: contain;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: contain;
 }
 .commenter-info-right {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 6px;
 }
 .commenter-name {
-    position: relative;
-    font-size: 16px;
-    line-height: 30px;
-    font-family: Montserrat;
-    color: #101316;
-    text-align: left;
-    display: inline-block;
-    min-width: 114px;
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Montserrat;
+  color: #101316;
+  text-align: left;
+  display: inline-block;
+  min-width: 114px;
 }
-.stars-container{
+.stars-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .huge-iconinterfacesolidstar {
-    height: 20px;
-    width: 20px;
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-    min-height: 20px;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 20px;
 }
 .important-part {
   position: relative;
@@ -132,24 +132,24 @@
   width: 959px;
 }
 .review-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0 0 8px;
-    box-sizing: border-box;
-    max-width: 100%;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 8px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
-.review-text{
-    position: relative;
-    font-size: 16px;
-    line-height: 30px;
-    color: #101316;
-    text-align: left;
-    display: inline-block;
-    max-width: 100%;
-    flex: 1;
+.review-text {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  color: #101316;
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  flex: 1;
 }
 .review-detail {
   align-self: stretch;
@@ -161,23 +161,23 @@
   font-size: 12px;
 }
 .review-detail-text {
-    position: relative;
-    font-size: 14px;
-    line-height: 24px;
-    font-family: Montserrat;
-    text-align: left;
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat;
+  text-align: left;
 }
 .text1 {
-    color: #a5a9ac;
+  color: #a5a9ac;
 }
 .text2 {
-    color: #101316;
+  color: #101316;
 }
 .between-comment {
-    align-self: stretch;
-    height: 1px;
-    position: relative;
-    background-color: rgba(165, 169, 172, 0.2);
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: rgba(165, 169, 172, 0.2);
 }
 .add-review-container {
   align-self: stretch;
@@ -186,6 +186,7 @@
   flex-direction: column;
   justify-content: flex-start;
   max-width: 100%;
+  row-gap: 1rem;
 }
 .title {
   align-self: stretch;
@@ -207,40 +208,40 @@
   box-sizing: border-box;
   gap: 10px;
 }
-.stars-parent{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 100%;
-    flex-direction: row;
-    row-gap: 20px;
+.stars-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  flex-direction: row;
+  row-gap: 20px;
 }
 .stars-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
 }
 .star-line {
-    height: 20px;
-    width: 1px;
-    position: relative;
-    background-color: rgba(165, 169, 172, 0.2);
+  height: 20px;
+  width: 1px;
+  position: relative;
+  background-color: rgba(165, 169, 172, 0.2);
 }
 .star-right {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 100%;
-    flex-direction: row;
-    gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  flex-direction: row;
+  gap: 10px;
 }
 .stroke {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .input {
   align-self: stretch;
@@ -254,17 +255,118 @@
   gap: 2px;
 }
 .textbox {
-    align-self: stretch;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    max-width: 100%;
-    border-radius: 10px;
-    border: 1px solid rgba(165, 169, 172, 0.2);
-    flex-direction: row;
-    padding: 11px 15px;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(165, 169, 172, 0.2);
+  flex-direction: row;
+  padding: 11px 15px;
 }
-
-
-
+.textbox .text {
+  width: 100%;
+  border: 0;
+  outline: 0;
+}
+.user-review-div {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+  gap: 5px;
+}
+.user-review-div .align-alignment {
+  width: 100%;
+}
+.user-review-div .align-alignment textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 11px 15px;
+}
+.shearing-sheet {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.drag-handle-icon {
+  height: 14px;
+  width: 13px;
+  position: relative;
+  object-fit: cover;
+}
+.review-button {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  border: 0;
+  padding: 13px 39.5px;
+  background-color: #1c4e8e;
+  border-radius: 10px;
+  flex-direction: row;
+  gap: 10px;
+}
+.review-button:hover {
+  background-color: #4275b5;
+}
+.button-text {
+  position: relative;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  text-align: left;
+  display: inline-block;
+  min-width: 60px;
+}
+/* Additional info */
+.additional-info-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+.info-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 30px;
+}
+.info-div-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.info-div-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+}
+.add-info-item {
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 57px;
+}
+.add-info-item-res {
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 48px;
+}
