@@ -27,6 +27,7 @@
   background-color: white;
   border-radius: 10px;
   margin-bottom: 0.6rem;
+  cursor: pointer;
 }
 
 #modal-overlay .modal-card {
