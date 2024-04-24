@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* display: block/none; */
+  display: none;
 }
 
 #modal-overlay .modal-wrapper {
@@ -31,6 +31,7 @@
   padding: 1rem;
   background-color: white;
   border-radius: 10px;
+  display: none;
 }
 
 /* sign-in part */
