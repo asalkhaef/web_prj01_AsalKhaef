@@ -4,9 +4,11 @@
   height: 100vh;
   background-color: #101316aa;
   z-index: 10;
-  display: flex;
+
   align-items: center;
   justify-content: center;
+
+  /* display: flex; */
   display: none;
 }
 
@@ -27,7 +29,7 @@
   margin-bottom: 0.6rem;
 }
 
-.modal-card {
+#modal-overlay .modal-card {
   padding: 1rem;
   background-color: white;
   border-radius: 10px;
