@@ -195,3 +195,42 @@
 }
 
 /* otp */
+.otp-inputs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.otp-input {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid rgba(165, 169, 172, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #101316;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.otp-input-active {
+  border: 1px solid #1c4e8e;
+}
+
+.otp-submit-btn {
+  border-radius: 10px;
+  background-color: #1c4e8e;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  border: 0;
+}
+
+.otp-submit-btn:hover {
+  background-color: #0c3e7e;
+  transition: 0.3s all;
+  cursor: pointer;
+}
