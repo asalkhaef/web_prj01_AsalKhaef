@@ -234,3 +234,35 @@
   transition: 0.3s all;
   cursor: pointer;
 }
+
+/* Successful Login */
+#modal-successful-login {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: center;
+}
+.circle-icon-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.circle-icon-wrapper .circle-icon {
+  padding: 10px;
+  border-radius: 50%;
+}
+.circle-icon-wrapper > .circle-icon {
+  background-color: rgba(28, 78, 142, 0.1);
+}
+.circle-icon-wrapper > .circle-icon > .circle-icon {
+  background-color: rgba(28, 78, 142, 0.2);
+}
+.circle-icon-wrapper > .circle-icon > .circle-icon > .circle-icon {
+  background-color: #1c4e8e;
+
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
