@@ -8,7 +8,10 @@ const blueLine = document.getElementsByClassName("data-divider-blue-line")[0]
 const productPrice = document.getElementsByClassName("product-detail-price")[0]
 const productColor = document.getElementsByClassName("color-option")
 
-console.log(productPrice.innerHTML)
+const cartNumber = document.getElementsByClassName("number-of-cart")[0]
+const cartBtn = document.getElementById("add-to-cart-button-id")
+
+console.log(cartNumber.innerText)
 
 
 
@@ -85,3 +88,14 @@ for (let item of productColor) {
             productPrice.innerHTML = "$1600.00"
     })
 }
+
+function addCart(){
+    let currentCartNumber = Number(cartNumber.innerText)
+    console.log(currentCartNumber)
+    currentCartNumber = currentCartNumber + 1
+    console.log(currentCartNumber)
+    cartNumber.innerText = currentCartNumber
+    console.log(cartNumber)
+}
+
+cartBtn.addEventListener("click", addCart)

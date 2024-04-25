@@ -353,6 +353,12 @@
   justify-content: flex-start;
   gap: 10px;
 }
+.color1:hover,
+.color2:hover,
+.color3:hover,
+.color4:hover {
+  transform: scale(1.2);
+}
 .color1,
 .color2,
 .color3,
