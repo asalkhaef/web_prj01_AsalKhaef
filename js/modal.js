@@ -8,7 +8,7 @@ const modalCloseBtn = document.getElementsByClassName("modal-close-btn")[0]
 
 const registerBtn = document.getElementById("register-btn")
 
-console.log(modalCloseBtn)
+
 
 function showLoginModal(){
     loginModal.style.display = "block"
@@ -32,5 +32,11 @@ function showRegisterModal(){
 }
 
 registerBtn.addEventListener("click", showRegisterModal)
+
+
+
+
+
+
 
 

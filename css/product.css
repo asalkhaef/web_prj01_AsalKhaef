@@ -241,6 +241,14 @@
   display: inline-block;
   min-width: 128px;
 }
+#review-form-id {
+  /* display: flex; */
+  display: none;
+}
+#additional-info-container-id {
+  /* display: flex; */
+  display: none;
+}
 .huge-iconinterfacesolidstar {
   height: 24px;
   width: 24px;
@@ -534,9 +542,11 @@
   position: relative;
   line-height: 30px;
   font-size: 16px;
+  cursor: pointer;
 }
 .description-blue {
   color: #1c4e8e;
+  font-weight: bold;
 }
 .data-divider {
   align-self: stretch;
@@ -558,7 +568,7 @@
   top: 0;
   left: 0;
   background-color: #1c4e8e;
-  width: 131px;
+  width: 105px;
   height: 3px;
   z-index: 1;
 }
@@ -568,6 +578,9 @@
   font-size: 16px;
   line-height: 30px;
 }
+#description-container-id {
+  display: block;
+}
 .description-text {
   flex: 1;
   position: relative;
@@ -576,8 +589,11 @@
   max-width: 100%;
   margin: 0;
 }
-.black-line{
+.black-line {
   margin: 0;
+}
+.additional-info-container {
+  padding: 0 20px 50px;
 }
 /* RELATED PRODUCTS*/
 .related-products-container {
@@ -677,9 +693,3 @@
   line-height: 30px;
   white-space: nowrap;
 }
-
-
- 
-  
-
-
