@@ -72,6 +72,7 @@ function openProductReview(){
 
 reviewBtn.addEventListener("click", openProductReview)
 
+// change price based on color!
 for (let item of productColor) {
     item.addEventListener("click", (event) => {
         if(event.target.classList[1] == "color1")
