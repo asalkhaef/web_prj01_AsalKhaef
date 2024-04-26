@@ -20,8 +20,6 @@
         <img class="mask-group-icon" alt="" src="../public/mask-group.svg" />
         <!--   ...................... START HEADER ............................ -->
         <header class="header">
-          <img class="logo-icon" alt="" src="../public/logo@2x.png" />
-
           <form class="main-frame">
             <div class="logo-search-container">
               <div class="logo-container">
@@ -116,7 +114,7 @@
                   src="../public/hugeiconinterfacesolidsearch-3.svg"
                 />
 
-                <div class="icon-with-number">
+                <div id="cart-icon" class="icon-with-number">
                   <img
                     class="huge-iconinterfacesolidsear"
                     alt=""
@@ -1424,7 +1422,7 @@
             <p>
               You have <b><span id="num-items">2</span> items</b> in your cart
             </p>
-            <div class="product-item">
+            <div class="product-item" id="product-item-1">
               <div class="product-item-img-wrapper">
                 <img class="side-bar-img" src="../public/image-16@2x.png" />
               </div>
@@ -1433,12 +1431,15 @@
                 <p class="product-item-price"><b>$1999.00</b></p>
                 <div class="product-item-last-row">
                   <p class="product-item-quantity">QTY: 1</p>
-                  <img src="../public/hugeiconinterfaceoutlinetrash.svg" />
+                  <img
+                    class="trash-icon"
+                    id="trash-icon-id-1"
+                    src="../public/hugeiconinterfaceoutlinetrash.svg"
+                  />
                 </div>
               </div>
             </div>
-            <hr />
-            <div class="product-item">
+            <div class="product-item" id="product-item-2">
               <div class="product-item-img-wrapper">
                 <img class="side-bar-img" src="../public/image-25@2x.png" />
               </div>
@@ -1447,11 +1448,14 @@
                 <p class="product-item-price"><b>$250.00</b></p>
                 <div class="product-item-last-row">
                   <p class="product-item-quantity">QTY: 1</p>
-                  <img src="../public/hugeiconinterfaceoutlinetrash.svg" />
+                  <img
+                    class="trash-icon"
+                    id="trash-icon-id-2"
+                    src="../public/hugeiconinterfaceoutlinetrash.svg"
+                  />
                 </div>
               </div>
             </div>
-            <hr />
           </div>
           <div class="mini-cart-buttom">
             <div class="sub-total-div">
@@ -1460,7 +1464,7 @@
             </div>
             <div class="login-mid-down">
               <div class="login-btn login-btn-light">View Cart</div>
-              <div class="login-btn">Checkout</div>
+              <div id="checkout-btn-id" class="login-btn">Checkout</div>
             </div>
           </div>
         </div>

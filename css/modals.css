@@ -280,7 +280,8 @@
 
 /* mini cart */
 #modal-overlay__cart {
-  display: block;
+  /* display: block; */
+  display: none;
 }
 #mini-cart-sidebar {
   box-sizing: border-box;
@@ -291,14 +292,17 @@
   min-width: 280px;
   box-shadow: -3px 0px 120px -35px #000000;
   padding: 10px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
+  display: none;
 }
 .product-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
 }
 .product-item-details {
   display: flex;
