@@ -16,6 +16,15 @@ const checkoutBtn = document.getElementById("checkout-btn-id")
 const trashIcons = document.getElementsByClassName("trash-icon")
 const cartItemNum = document.getElementById("num-items")
 
+const forgetBtn = document.getElementById("forget-btn-id")
+const otpModal = document.getElementById("modal-otp")
+
+const submitOtpBtn = document.getElementById("otp-submit-btn-id")
+const successModal = document.getElementById("modal-successful-login")
+
+const optBackBtn = document.getElementById("opt-back-btn")
+const iphoneNum2 = document.getElementById("iphone-num")
+const cartNumber2 = document.getElementsByClassName("number-of-cart")[0]
 
 
 function showLoginModal(){
@@ -64,10 +73,37 @@ for (let icon of trashIcons) {
         let productId = `product-item-${productIndex}`
         document.getElementById(productId).remove()
         let currentNum = Number(cartItemNum.innerText)
-        currentNum--
+        if(productId == "product-item-1")
+            currentNum = currentNum - Number(iphoneNum2.innerText)
+        else
+            currentNum--
         cartItemNum.innerText = currentNum
+        cartNumber2.innerText = currentNum
+
     })
 }
+
+function openOTP(){
+    otpModal.style.display = "block"
+    loginModal.style.display = "none"
+}
+
+forgetBtn.addEventListener("click", openOTP)
+
+function openSuccess(){
+    otpModal.style.display = "none"
+    successModal.style.display = "flex"
+}
+
+submitOtpBtn.addEventListener("click", openSuccess)
+
+function backToLogin(){
+    successModal.style.display = "none"
+    loginModal.style.display = "block"
+    
+}
+optBackBtn.addEventListener("click", backToLogin)
+
 
 
 

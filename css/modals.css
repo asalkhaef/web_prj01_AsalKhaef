@@ -246,6 +246,10 @@
   cursor: pointer;
 }
 
+#forget-btn-id {
+  cursor: pointer;
+}
+
 /* Successful Login */
 #modal-successful-login {
   max-width: 390px;
@@ -253,6 +257,7 @@
   flex-direction: column;
   row-gap: 30px;
   text-align: center;
+  padding: 10px;
 }
 .circle-icon-wrapper {
   display: flex;

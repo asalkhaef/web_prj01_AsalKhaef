@@ -342,7 +342,7 @@
             <div class="miss-container">
               <div class="miss-text">Don’t miss the last opportunity</div>
             </div>
-            <button class="shop-now-off-button">
+            <button id="link-product-page" class="shop-now-off-button">
               <div class="shop-now-off-text">Shop Now</div>
               <div class="shop-now-off-arrow-icon">
                 <img
@@ -1284,7 +1284,9 @@
 
                     <div class="login-checkbox">Remember Me</div>
                   </div>
-                  <div class="login-text">Forgot Password?</div>
+                  <div id="forget-btn-id" class="login-text">
+                    Forgot Password?
+                  </div>
                 </div>
               </div>
               <div class="login-mid-down">
@@ -1386,7 +1388,9 @@
               <div class="otp-input"></div>
               <div class="otp-input"></div>
             </div>
-            <button class="otp-submit-btn">Send OTP</button>
+            <button id="otp-submit-btn-id" class="otp-submit-btn">
+              Send OTP
+            </button>
           </div>
           <div id="modal-successful-login" class="modal-card">
             <div class="circle-icon-wrapper">
@@ -1408,7 +1412,9 @@
                 Your password has been updated successfully
               </div>
             </div>
-            <button class="otp-submit-btn">Back to Login</button>
+            <button id="opt-back-btn" class="otp-submit-btn">
+              Back to Login
+            </button>
           </div>
         </div>
       </div>
@@ -1428,7 +1434,9 @@
                 <p class="product-item-title">Apple iPhone 14 Pro</p>
                 <p class="product-item-price"><b>$1999.00</b></p>
                 <div class="product-item-last-row">
-                  <p class="product-item-quantity">QTY: 1</p>
+                  <p class="product-item-quantity">
+                    QTY: <span id="iphone-num">1</span>
+                  </p>
                   <img
                     class="trash-icon"
                     id="trash-icon-id-1"
@@ -1470,4 +1478,5 @@
     </div>
   </body>
   <script src="../js/modal.js" type="text/javascript"></script>
+  <script src="../js/main.js" type="text/javascript"></script>
 </html>
