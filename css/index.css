@@ -228,7 +228,6 @@
   flex-shrink: 0;
 }
 .search-text {
-  width: calc(100% - 24px);
   border: 0;
   outline: 0;
   font-family: Montserrat;
@@ -240,7 +239,6 @@
   color: rgba(16, 19, 22, 0.2);
   text-align: left;
   display: inline-block;
-  min-width: 169px;
   padding: 0;
 }
 .search-button {
@@ -1314,7 +1312,6 @@
   justify-content: flex-start;
 }
 .encoder {
-  width: 1140px;
   align-items: flex-start;
   gap: 16px;
   max-width: 100%;
@@ -1514,7 +1511,9 @@
 }
 .electro-all-rights {
   flex: 1;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   line-height: 30px;
   display: inline-block;
   min-width: 192px;
