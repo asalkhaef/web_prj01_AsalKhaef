@@ -1,4 +1,4 @@
-#modal-overlay {
+.modal-overlay {
   position: absolute;
   inset: 0;
   height: 100vh;
@@ -8,16 +8,16 @@
   align-items: center;
   justify-content: center;
 
-  /* display: flex; */
+  display: flex;
   display: none;
 }
 
-#modal-overlay .modal-wrapper {
+.modal-overlay .modal-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-#modal-overlay .modal-close-btn {
+.modal-overlay .modal-close-btn {
   align-self: flex-end;
   width: 2rem;
   height: 2rem;
@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-#modal-overlay .modal-card {
+.modal-overlay .modal-card {
   padding: 1rem;
   background-color: white;
   border-radius: 10px;
@@ -147,11 +147,18 @@
   padding: 20px;
   box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background-color: #0c3e7e;
 }
 .login-btn-light {
   background-color: #fff;
   color: black;
   border: black solid 1px;
+}
+.login-btn-light:hover {
+  background-color: #efefef;
 }
 .signin-ways-btn {
   width: 380px;
@@ -242,7 +249,7 @@
 /* Successful Login */
 #modal-successful-login {
   max-width: 390px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   row-gap: 30px;
   text-align: center;
@@ -269,4 +276,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* mini cart */
+#modal-overlay__cart {
+  display: block;
+}
+#mini-cart-sidebar {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  min-width: 280px;
+  box-shadow: -3px 0px 120px -35px #000000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.product-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.product-item-details p {
+  margin: 0;
+  font-size: 15px;
+}
+.side-bar-img {
+  width: 80%;
+}
+.product-item-img-wrapper {
+  width: 70px;
+  height: 70px;
+}
+.product-item-last-row {
+  display: flex;
+  justify-content: space-between;
+}
+.sub-total-div {
+  display: flex;
+  justify-content: space-between;
 }

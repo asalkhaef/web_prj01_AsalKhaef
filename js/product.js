@@ -91,11 +91,8 @@ for (let item of productColor) {
 
 function addCart(){
     let currentCartNumber = Number(cartNumber.innerText)
-    console.log(currentCartNumber)
     currentCartNumber = currentCartNumber + 1
-    console.log(currentCartNumber)
     cartNumber.innerText = currentCartNumber
-    console.log(cartNumber)
 }
 
 cartBtn.addEventListener("click", addCart)

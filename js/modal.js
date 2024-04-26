@@ -1,6 +1,6 @@
 const loginModal = document.getElementById("modal-login")
 const registerModal = document.getElementById("modal-register")
-const overlay = document.getElementById("modal-overlay")
+const overlay = document.getElementById("modal-overlay__auth")
 const loginBtn = document.getElementById("login-button-mainpage")
 const modalCards = document.getElementsByClassName("modal-card")
 
