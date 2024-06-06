@@ -143,6 +143,7 @@
 .logo-text {
   overflow: hidden;
   flex-shrink: 0;
+  cursor: pointer;
 }
 .logo-text {
   align-self: stretch;

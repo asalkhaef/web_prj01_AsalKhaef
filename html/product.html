@@ -525,7 +525,100 @@
                 <b class="title">Add your Review</b>
                 <div class="rating-container">
                   <div class="title">Your Rating</div>
-                  <div class="stars-parent">
+                  <div class="star-display">
+                    <div class="star-div" id="1-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-line"></div>
+                    <div class="star-div" id="2-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-line"></div>
+                    <div class="star-div" id="3-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+
+                    <div class="star-line"></div>
+                    <div class="star-div" id="4-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-line"></div>
+                    <div class="star-div" id="5-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- <div class="stars-parent">
                     <div class="stars-container">
                       <img
                         class="huge-iconinterfacesolidstar"
@@ -626,7 +719,7 @@
                         />
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="input">
                   <div class="title">Name</div>
@@ -661,7 +754,7 @@
                   </div>
                 </div>
               </div>
-              <button class="review-button">
+              <button type="submit" class="review-button">
                 <div class="button-text">Submit</div>
               </button>
             </form>
@@ -1068,7 +1161,9 @@
 
                     <div class="login-checkbox">Remember Me</div>
                   </div>
-                  <div class="login-text">Forgot Password?</div>
+                  <div id="forget-btn-id" class="login-text">
+                    Forgot Password?
+                  </div>
                 </div>
               </div>
               <div class="login-mid-down">
@@ -1170,7 +1265,9 @@
               <div class="otp-input"></div>
               <div class="otp-input"></div>
             </div>
-            <button class="otp-submit-btn">Send OTP</button>
+            <button id="otp-submit-btn-id" class="otp-submit-btn">
+              Send OTP
+            </button>
           </div>
           <div id="modal-successful-login" class="modal-card">
             <div class="circle-icon-wrapper">
@@ -1192,7 +1289,9 @@
                 Your password has been updated successfully
               </div>
             </div>
-            <button class="otp-submit-btn">Back to Login</button>
+            <button id="opt-back-btn" class="otp-submit-btn">
+              Back to Login
+            </button>
           </div>
         </div>
       </div>
@@ -1212,7 +1311,9 @@
                 <p class="product-item-title">Apple iPhone 14 Pro</p>
                 <p class="product-item-price"><b>$1999.00</b></p>
                 <div class="product-item-last-row">
-                  <p class="product-item-quantity">QTY: 1</p>
+                  <p class="product-item-quantity">
+                    QTY: <span id="iphone-num">1</span>
+                  </p>
                   <img
                     class="trash-icon"
                     id="trash-icon-id-1"

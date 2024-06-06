@@ -11,7 +11,8 @@ const productColor = document.getElementsByClassName("color-option")
 const cartNumber = document.getElementsByClassName("number-of-cart")[0]
 const cartBtn = document.getElementById("add-to-cart-button-id")
 
-console.log(cartNumber.innerText)
+const cartItemNum2 = document.getElementById("num-items")
+const iphoneNum = document.getElementById("iphone-num")
 
 
 
@@ -93,6 +94,16 @@ function addCart(){
     let currentCartNumber = Number(cartNumber.innerText)
     currentCartNumber = currentCartNumber + 1
     cartNumber.innerText = currentCartNumber
+    cartItemNum2.innerText = currentCartNumber
+    iphoneNum.innerText = currentCartNumber - 1
 }
 
 cartBtn.addEventListener("click", addCart)
+
+const linkMainBtn = document.getElementsByClassName("logo-text")[0]
+
+function gotoMainPage(){
+    document.location.href = "../html/index.html"
+}
+
+linkMainBtn.addEventListener("click", gotoMainPage)
