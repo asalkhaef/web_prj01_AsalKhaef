@@ -703,3 +703,9 @@
   line-height: 30px;
   white-space: nowrap;
 }
+.star-display {
+  display: flex;
+}
+.star-display .star-div {
+  padding: 0px 10px;
+}
