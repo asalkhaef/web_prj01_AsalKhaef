@@ -1,0 +1,1360 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/review.css" />
+    <link rel="stylesheet" href="../css/modals.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="product-detail-descriptions">
+      <header class="header">
+        <form class="main-frame">
+          <div class="logo-search-container">
+            <div class="logo-container">
+              <img
+                class="logo-text"
+                loading="lazy"
+                alt=""
+                src="../public/logo--text.svg"
+              />
+            </div>
+            <div class="search-container">
+              <div class="search">
+                <div class="search-parent">
+                  <div class="search-text">All</div>
+                  <img
+                    class="down-arrow-icon"
+                    alt=""
+                    src="../public/-icon.svg"
+                  />
+                </div>
+              </div>
+              <div class="search-input-container">
+                <div class="icon-parent">
+                  <img class="search-icon" alt="" src="../public/-icon-1.svg" />
+
+                  <input class="search-text" placeholder="Search" type="text" />
+                </div>
+              </div>
+              <button class="search-button">Search</button>
+            </div>
+          </div>
+          <div class="option-container">
+            <div class="category-select">
+              <div class="category">
+                <div class="category-icon-div">
+                  <img
+                    class="hamburger-icon"
+                    alt=""
+                    src="../public/-icon-2@2x.png"
+                  />
+                </div>
+                <div class="category-text">All Categories</div>
+                <div class="category-arrow-icon-div">
+                  <img
+                    class="category-arrow-icon"
+                    alt=""
+                    src="../public/-icon.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="right-option-container">
+              <div class="options">
+                <div class="home">Home</div>
+                <div class="shop-arrow">
+                  <div class="shop">Shop</div>
+                  <div class="resizer">
+                    <img
+                      class="huge-iconarrowsoutlinedirec"
+                      alt=""
+                      src="../public/hugeiconarrowsoutlinedirectiondown-01.svg"
+                    />
+                  </div>
+                </div>
+                <div class="about-us">About Us</div>
+                <div class="blog">Blog</div>
+                <div class="contact-us">Contact Us</div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="top-right-options">
+          <div class="header-icons-container">
+            <div class="header-icons">
+              <img
+                class="huge-iconinterfacesolidsear"
+                alt=""
+                src="../public/-icon-1.svg"
+              />
+
+              <img
+                class="huge-iconinterfacesolidsear"
+                alt=""
+                src="../public/hugeiconinterfacesolidsearch-3.svg"
+              />
+
+              <div id="cart-icon" class="icon-with-number">
+                <img
+                  class="huge-iconinterfacesolidsear"
+                  alt=""
+                  src="../public/hugeiconinterfacesolidsearch-4.svg"
+                />
+
+                <div class="cart-number">
+                  <div class="cart-container"></div>
+                  <b class="number-of-cart">2</b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="login-button-mainpage" class="login-button">Login</button>
+        </div>
+      </header>
+      <main class="product-detail-main">
+        <section class="product-detail-section">
+          <div class="product-detail-section-parent">
+            <div class="product-detail-top">
+              <div class="product-detail-left">
+                <div class="home-address">
+                  <div class="home-add">Home</div>
+                  <div class="huge-iconarrowssoliddirecti-wrapper">
+                    <img
+                      class="huge-iconarrowssoliddirecti"
+                      alt=""
+                      src="../public/hugeiconarrowssoliddirectionright-01.svg"
+                    />
+                  </div>
+                  <div class="home-add">Shop</div>
+                  <div class="huge-iconarrowssoliddirecti-wrapper">
+                    <img
+                      class="huge-iconarrowssoliddirecti"
+                      alt=""
+                      src="../public/hugeiconarrowssoliddirectionright-01.svg"
+                    />
+                  </div>
+                  <div class="home-add">Apple iPhone 14 Pro</div>
+                </div>
+                <div class="product-images-container">
+                  <div class="main-image">
+                    <div class="main-image-child"></div>
+                    <img
+                      class="image-icon-main"
+                      loading="lazy"
+                      alt=""
+                      src="../public/image-16@2x.png"
+                    />
+                  </div>
+                  <div class="other-images">
+                    <div class="other-images-detail">
+                      <div class="output-producer-item"></div>
+                      <img
+                        class="image-icon-other"
+                        loading="lazy"
+                        alt=""
+                        src="../public/image-171@2x.png"
+                      />
+                    </div>
+                    <div class="other-images-detail">
+                      <div class="output-producer-item"></div>
+                      <img
+                        class="image-icon-other"
+                        loading="lazy"
+                        alt=""
+                        src="../public/image-171@2x.png"
+                      />
+                    </div>
+                    <div class="other-images-detail">
+                      <div class="output-producer-inner"></div>
+                      <img
+                        class="image-icon-other"
+                        loading="lazy"
+                        alt=""
+                        src="../public/image-171@2x.png"
+                      />
+                    </div>
+                    <div class="other-images-detail">
+                      <div class="output-producer-child1"></div>
+                      <img
+                        class="image-icon-other"
+                        loading="lazy"
+                        alt=""
+                        src="../public/image-171@2x.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-detail-right">
+                <div class="product-detail-right-text-container">
+                  <div class="product-detail-right-top">
+                    <div class="product-detail-right-top-left">
+                      <h2 class="product-detail-title">Apple iPhone 14 Pro</h2>
+                      <div class="product-detail-rate-price-price">
+                        <div class="product-detail-rate">
+                          <div class="product-detail-rate-star">
+                            <div class="product-detail-star-icons">
+                              <img
+                                class="huge-iconinterfacesolidstar"
+                                loading="lazy"
+                                alt=""
+                                src="../public/hugeiconinterfacesolidstar.svg"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar"
+                                alt=""
+                                src="../public/hugeiconinterfacesolidstar.svg"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar"
+                                alt=""
+                                src="../public/hugeiconinterfacesolidstar.svg"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar"
+                                alt=""
+                                src="../public/hugeiconinterfacesolidstar.svg"
+                              />
+
+                              <img
+                                class="huge-iconinterfacesolidstar"
+                                alt=""
+                                src="../public/hugeiconinterfacesolidstar.svg"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews">
+                            <span class="review-num">5.0 (121 Reviews)</span>
+                          </div>
+                        </div>
+                        <div class="product-detail-price">$1999.00</div>
+                      </div>
+                    </div>
+                    <button class="button20">In Stock</button>
+                  </div>
+                  <div class="product-detail-info">
+                    <div class="product-detail-info-text">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution.
+                    </div>
+                  </div>
+                  <div class="product-detail-right-middle">
+                    <b class="color">Color</b>
+                    <div class="color-right">
+                      <div class="color-options">
+                        <div class="color-option color1"></div>
+                        <div class="color-option color2"></div>
+                        <div class="color-option color3"></div>
+                        <div class="color-option color4"></div>
+                      </div>
+                      <div class="product-request">
+                        <div class="request-count">
+                          <div class="request-count-icon-min">
+                            <div class="request-count-icon-min-child"></div>
+                            <img
+                              class="huge-iconinterfacesolidstar"
+                              loading="lazy"
+                              alt=""
+                              src="../public/hugeiconinterfacesolidminus.svg"
+                            />
+                          </div>
+                          <div class="request-count-icon-num">
+                            <div class="request-count-icon-min-child"></div>
+                            <div class="request-count-number">1</div>
+                          </div>
+                          <div class="request-count-icon-add">
+                            <div class="request-count-icon-min-child"></div>
+                            <img
+                              class="huge-iconinterfacesolidstar"
+                              loading="lazy"
+                              alt=""
+                              src="../public/hugeiconinterfacesolidplus.svg"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          id="add-to-cart-button-id"
+                          class="add-to-cart-button"
+                        >
+                          Add to Cart
+                        </button>
+                        <button class="like-button">
+                          <img
+                            class="huge-iconinterfacesolidstar"
+                            alt=""
+                            src="../public/hugeiconhealthoutlineheart.svg"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="share">
+                    <b class="share-text">Share</b>
+                    <div class="share-options">
+                      <div class="share-option-icon">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          loading="lazy"
+                          alt=""
+                          src="../public/hugeiconsocialsolidfacebook.svg"
+                        />
+                      </div>
+                      <div class="share-option-icon">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          loading="lazy"
+                          alt=""
+                          src="../public/hugeiconsocialsolidtwitter.svg"
+                        />
+                      </div>
+                      <div class="share-option-icon">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          loading="lazy"
+                          alt=""
+                          src="../public/hugeiconsocialsolidinstagram@2x.png"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="description-part">
+              <div class="description-part-top">
+                <div class="description-part-top-child">
+                  <div
+                    id="description-btn"
+                    class="description-part-top-child-options description-blue"
+                  >
+                    Descriptions
+                  </div>
+                  <div
+                    id="additional-info-btn"
+                    class="description-part-top-child-options"
+                  >
+                    Additional Information
+                  </div>
+                  <div
+                    id="review-btn"
+                    class="description-part-top-child-options"
+                  >
+                    Reviews
+                  </div>
+                </div>
+                <div class="data-divider">
+                  <div class="data-divider-child"></div>
+                  <div class="data-divider-blue-line"></div>
+                </div>
+              </div>
+              <div
+                id="description-container-id"
+                class="description-container option-content"
+              >
+                <p class="description-text">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy.
+                </p>
+                <p class="blank-line">&nbsp;</p>
+                <p class="blank-line">
+                  Various versions have evolved over the years, sometimes by
+                  accident, sometimes on purpose (injected humour and the like).
+                </p>
+              </div>
+            </div>
+            <form id="review-form-id" class="review-form option-content">
+              <div class="review-list-container">
+                <div class="customer-reviews-title-div">
+                  <b class="customer-reviews-title">Customer Reviews</b>
+                </div>
+                <div class="commenter-info-div">
+                  <div class="commenter">
+                    <img
+                      class="commenter-img"
+                      loading="lazy"
+                      alt=""
+                      src="../public/ellipse-956@2x.png"
+                    />
+
+                    <div class="commenter-info-right">
+                      <div class="commenter-name">Mark Williams</div>
+                      <div class="stars-container">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <b class="important-part">Excellent Product, I Love It 😍</b>
+                <div class="review-container">
+                  <div class="review-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to
+                    using 'Content here, content here', making it look like
+                    readable English.
+                  </div>
+                </div>
+                <div class="review-detail">
+                  <div class="review-detail-text">
+                    <span class="text1">Review by </span>
+                    <span class="text2">Electro</span>
+                    <span class="text1"> Posted on </span>
+                    <span class="text2">Sep 08, 2023</span>
+                  </div>
+                  <div class="between-comment"></div>
+                </div>
+                <div class="commenter-info-div">
+                  <div class="commenter">
+                    <img
+                      class="commenter-img"
+                      loading="lazy"
+                      alt=""
+                      src="../public/ellipse-957@2x.png"
+                    />
+
+                    <div class="commenter-info-right">
+                      <div class="commenter-name">Alexa Johnson</div>
+                      <div class="stars-container">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-5.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <b class="important-part"
+                  >My Brother is very much happy with this iPhone</b
+                >
+                <div class="review-container">
+                  <div class="review-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to
+                    using 'Content here, content here', making it look like
+                    readable English.
+                  </div>
+                </div>
+                <div class="review-detail">
+                  <div class="review-detail-text">
+                    <span class="text1">Review by </span>
+                    <span class="text2">Electro</span>
+                    <span class="text1"> Posted on </span>
+                    <span class="text2">Sep 08, 2023</span>
+                  </div>
+                  <div class="frame-child43"></div>
+                </div>
+              </div>
+              <div class="add-review-container">
+                <b class="title">Add your Review</b>
+                <div class="rating-container">
+                  <div class="title">Your Rating</div>
+                  <div class="star-display">
+                    <div class="star-div" id="1-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-line"></div>
+                    <div class="star-div" id="2-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-line"></div>
+                    <div class="star-div" id="3-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+
+                    <div class="star-line"></div>
+                    <div class="star-div" id="4-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-line"></div>
+                    <div class="star-div" id="5-star">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- <div class="stars-parent">
+                    <div class="stars-container">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+
+                      <div class="star-line"></div>
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+                    </div>
+                    <div class="star-right">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar-15.svg"
+                      />
+
+                      <div class="star-line"></div>
+                      <div class="stroke">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+                      </div>
+                      <div class="star-line"></div>
+                      <div class="stroke">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+                      </div>
+                      <div class="star-line"></div>
+                      <div class="stroke">
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+
+                        <img
+                          class="huge-iconinterfacesolidstar"
+                          alt=""
+                          src="../public/hugeiconinterfacesolidstar-15.svg"
+                        />
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="input">
+                  <div class="title">Name</div>
+                  <div class="textbox">
+                    <input
+                      class="text"
+                      placeholder="Enter Your Name"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="input">
+                  <div class="title">Email Address</div>
+                  <div class="textbox">
+                    <input
+                      class="text"
+                      placeholder="Enter Your Email"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="user-review-div">
+                  <div class="title">Your Review</div>
+                  <div class="input">
+                    <div class="align-alignment">
+                      <textarea
+                        name="review"
+                        placeholder="Enter Your Review"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="review-button">
+                <div class="button-text">Submit</div>
+              </button>
+            </form>
+            <!-- Additional info -->
+            <div
+              id="additional-info-container-id"
+              class="additional-info-container option-content"
+            >
+              <div class="info-div">
+                <div class="info-div-left">
+                  <b class="add-info-item">Brand</b>
+                  <b class="add-info-itemt">Item Height</b>
+                  <b class="add-info-item">Item Width</b>
+                  <b class="add-info-item">Screen Size</b>
+                  <b class="add-info-item">Model Number</b>
+                  <b class="add-info-item">RAM Size</b>
+                  <b class="add-info-item">Operating System</b>
+                </div>
+                <div class="info-div-right">
+                  <div class="add-info-item-res">Apple</div>
+                  <div class="add-info-item-res">65 CM</div>
+                  <div class="add-info-item-res">31.4 CM</div>
+                  <div class="add-info-item-res">6.5 Inch</div>
+                  <div class="add-info-item-res">MF841HN/A</div>
+                  <div class="add-info-item-res">6 GB</div>
+                  <div class="add-info-item-res">ios 17</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="related-products-container">
+            <h1 class="related-products-header">Related Products</h1>
+            <div class="related-products-item-container">
+              <div class="related-product-single">
+                <div class="related-product-single-img-container">
+                  <img
+                    class="related-product-single-img"
+                    loading="lazy"
+                    alt=""
+                    src="../public/image-221@2x.png"
+                  />
+                </div>
+                <div class="related-product-single-info-container">
+                  <div class="related-product-single-info-top">
+                    <b class="related-product-name">Apple iPhone 14 Plus</b>
+                    <div class="stars-container">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="related-product-price">$850.00</div>
+                </div>
+              </div>
+              <div class="related-product-single">
+                <div class="related-product-single-img-container">
+                  <img
+                    class="related-product-single-img"
+                    loading="lazy"
+                    alt=""
+                    src="../public/image-261@2x.png"
+                  />
+                </div>
+                <div class="related-product-single-info-container">
+                  <div class="related-product-single-info-top">
+                    <b class="related-product-name">Xiaomi Fimi X8 Mini</b>
+                    <div class="stars-container">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="related-product-price">$650.00</div>
+                </div>
+              </div>
+              <div class="related-product-single">
+                <div class="related-product-single-img-container">
+                  <img
+                    class="related-product-single-img"
+                    alt=""
+                    src="../public/image-19-1@2x.png"
+                  />
+                </div>
+                <div class="related-product-single-info-container">
+                  <div class="related-product-single-info-top">
+                    <b class="related-product-name">Apple iPad Mini 6 Wi-Fi</b>
+                    <div class="stars-container">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="related-product-price">$500.00</div>
+                </div>
+              </div>
+              <div class="related-product-single">
+                <div class="related-product-single-img-container">
+                  <img
+                    class="related-product-single-img"
+                    loading="lazy"
+                    alt=""
+                    src="../public/image-251@2x.png"
+                  />
+                </div>
+                <div class="related-product-single-info-container">
+                  <div class="related-product-single-info-top">
+                    <b class="related-product-name">Asus ROG Delta S</b>
+                    <div class="stars-container">
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+
+                      <img
+                        class="huge-iconinterfacesolidstar"
+                        alt=""
+                        src="../public/hugeiconinterfacesolidstar.svg"
+                      />
+                    </div>
+                  </div>
+                  <div class="related-product-price">$250.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-items">
+          <div class="footer-column1">
+            <img class="footer-logo" alt="" src="../public/logo--text-1.svg" />
+
+            <div class="footer-column1-items">
+              <div class="footer-items">
+                <div class="collector">
+                  <img
+                    class="huge-iconarrowsoutlinedirec"
+                    alt=""
+                    src="../public/hugeiconcommunicationoutlinecalling.svg"
+                  />
+                </div>
+                <div class="compressor">(316) 555-0116</div>
+              </div>
+              <div class="footer-items">
+                <div class="normalizer">
+                  <div class="huge-iconarrowsoutlinedirec">
+                    <div class="matcher"></div>
+                    <img
+                      class="calculator-icon"
+                      alt=""
+                      src="../public/calculator.svg"
+                    />
+                  </div>
+                </div>
+                <div class="electroexamplecom">electro@example.com</div>
+              </div>
+              <div class="footer-items">
+                <img
+                  class="huge-iconarrowsoutlinedirec"
+                  alt=""
+                  src="../public/hugeicondeviceoutlinelocation.svg"
+                />
+
+                <div class="parker-rd-allentown-container">
+                  <p class="parker-rd-allentown">4140 Parker Rd. Allentown,</p>
+                  <p class="new-mexico-31134">New Mexico 31134</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-information-column">
+            <b>Information</b>
+            <div class="footer-information-items">
+              <div class="information-column-items">My Account</div>
+              <div class="information-column-items">Login</div>
+              <div class="information-column-items">My Cart</div>
+              <div class="information-column-items">My Wishlist</div>
+              <div class="information-column-items">Checkout</div>
+            </div>
+          </div>
+          <div class="footer-information-column">
+            <b>Service</b>
+            <div class="footer-information-items">
+              <div class="information-column-items">About Us</div>
+              <div class="information-column-items">Careers</div>
+              <div class="information-column-items">Delivery Information</div>
+              <div class="information-column-items">Privacy Policy</div>
+              <div class="information-column-items">Terms & Conditions</div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <div class="subscribe-top">
+              <b class="subscribe-top-title">Subscribe</b>
+              <div class="subscribe-top-title">
+                Enter your email below to be the first to know about new
+                collections.
+              </div>
+            </div>
+            <div class="footer-mail">
+              <div class="footer-mail-child">
+                <div class="footer-mail-child-left">
+                  <div class="huge-iconarrowsoutlinedirec">
+                    <div class="controller"></div>
+                    <img class="" alt="" src="../public/calculator.svg" />
+                  </div>
+                  <div class="your-email">Your Email</div>
+                </div>
+                <img
+                  class="huge-iconarrowsoutlinedirec"
+                  alt=""
+                  src="../public/hugeiconarrowsoutlinearrowright@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="encoder">
+          <div class="footer-line"></div>
+          <div class="footer-icon-container">
+            <div class="payment-methodvisa-parent">
+              <img
+                class="footer-last-icon"
+                loading="lazy"
+                alt=""
+                src="../public/payment-methodvisa.svg"
+              />
+
+              <img
+                class="footer-last-icon"
+                loading="lazy"
+                alt=""
+                src="../public/payment-methodmastercard.svg"
+              />
+
+              <img
+                class="footer-last-icon"
+                alt=""
+                src="../public/payment-methodgooglepay.svg"
+              />
+
+              <img
+                class="footer-last-icon"
+                alt=""
+                src="../public/payment-methodamex.svg"
+              />
+
+              <img
+                class="footer-last-icon"
+                alt=""
+                src="../public/payment-methodpaypal.svg"
+              />
+            </div>
+            <div class="electro-all-rights">
+              ©2023 Electro All Rights are reserved️
+            </div>
+            <div class="social-icons">
+              <img
+                class="huge-iconarrowsoutlinedirec"
+                alt=""
+                src="../public/hugeiconsocialsolidfacebook.svg"
+              />
+
+              <img
+                class="huge-iconarrowsoutlinedirec"
+                alt=""
+                src="../public/hugeiconsocialsolidinstagram@2x.png"
+              />
+
+              <img
+                class="huge-iconarrowsoutlinedirec"
+                alt=""
+                src="../public/hugeiconsocialsolidtwitter.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- START MODALS -->
+      <div id="modal-overlay__auth" class="modal-overlay">
+        <div class="modal-wrapper">
+          <div class="modal-close-btn">X</div>
+          <div id="modal-login" class="modal-card">
+            <div class="login-top">
+              <b class="login-title">Welcome 👋 </b>
+              <div class="login-title login-title-sec">Please login here</div>
+            </div>
+            <div class="login-mid">
+              <div class="login-mid-top">
+                <div class="login-mid-input">
+                  <div class="login-input">
+                    <div class="login-label">Email Address</div>
+                    <div class="login-textbox">
+                      <div class="login-text">kristin.watson@example.com</div>
+                    </div>
+                  </div>
+                  <div class="login-input">
+                    <div class="login-label">Password</div>
+                    <div class="login-textbox">
+                      <div class="login-text">••••••••••••••••••</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox-parent">
+                  <div class="login-checkbox">
+                    <img class="state-icon" alt="" src="../public/state.svg" />
+
+                    <div class="login-checkbox">Remember Me</div>
+                  </div>
+                  <div id="forget-btn-id" class="login-text">
+                    Forgot Password?
+                  </div>
+                </div>
+              </div>
+              <div class="login-mid-down">
+                <div class="login-btn">Login</div>
+                <div id="register-btn" class="login-btn login-btn-light">
+                  Register
+                </div>
+              </div>
+            </div>
+            <div class="or-login-with-container">
+              <div class="or-login-line"></div>
+              <div class="or-login-with">Or Login With</div>
+              <div class="or-login-line"></div>
+            </div>
+            <div class="button-group">
+              <div class="signin-ways-btn">
+                <img class="google-icon" alt="" src="../public/google.svg" />
+
+                <div class="signin-ways-btn2">Login with Google</div>
+              </div>
+              <div class="signin-ways-btn">
+                <img class="apple-icon" alt="" src="../public/apple.svg" />
+
+                <div class="signin-ways-btn2">Login with Apple</div>
+              </div>
+            </div>
+          </div>
+          <div id="modal-register" class="modal-card">
+            <div class="login-top">
+              <b class="login-title">Create New Account</b>
+              <div class="login-title2">Please enter details</div>
+            </div>
+            <div class="login-mid">
+              <div class="login-mid-top">
+                <div class="login-mid-input">
+                  <div class="login-input">
+                    <div class="login-label">Name</div>
+                    <div class="login-textbox">
+                      <div class="login-text">Kristin Watson</div>
+                    </div>
+                  </div>
+                  <div class="login-input">
+                    <div class="login-label">Email Address</div>
+                    <div class="login-textbox">
+                      <div class="login-text">kristin.watson@example.com</div>
+                    </div>
+                  </div>
+                  <div class="login-input">
+                    <div class="login-label">Password</div>
+                    <div class="login-textbox">
+                      <div class="login-text">••••••••••••••••••</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkbox-wrapper">
+                  <div class="login-checkbox">
+                    <img class="state-icon" alt="" src="../public/state.svg" />
+
+                    <div class="login-checkbox">
+                      I agree to the Terms & Conditions
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="button-wrapper">
+                <div class="login-btn login-btn-white">Register</div>
+              </div>
+            </div>
+            <div class="or-login-with-container">
+              <div class="or-login-line"></div>
+              <div class="or-login-with">Or Login With</div>
+              <div class="or-login-line"></div>
+            </div>
+            <div class="button-group">
+              <div class="signin-ways-btn">
+                <img class="google-icon" alt="" src="../public/google.svg" />
+
+                <div class="signin-ways-btn2">Login with Google</div>
+              </div>
+              <div class="signin-ways-btn">
+                <img class="apple-icon" alt="" src="../public/apple.svg" />
+
+                <div class="signin-ways-btn2">Login with Apple</div>
+              </div>
+            </div>
+          </div>
+          <div id="modal-otp" class="modal-card">
+            <div class="login-top">
+              <b class="login-title">Enter OTP</b>
+              <div class="login-title login-title-sec">
+                We have share a code of your registered email<br />
+                address kristin.watson@example.com
+              </div>
+            </div>
+            <div class="otp-inputs-wrapper">
+              <div class="otp-input otp-input-active">3</div>
+              <div class="otp-input otp-input-active">1</div>
+              <div class="otp-input"></div>
+              <div class="otp-input"></div>
+              <div class="otp-input"></div>
+            </div>
+            <button id="otp-submit-btn-id" class="otp-submit-btn">
+              Send OTP
+            </button>
+          </div>
+          <div id="modal-successful-login" class="modal-card">
+            <div class="circle-icon-wrapper">
+              <div class="circle-icon">
+                <div class="circle-icon">
+                  <div class="circle-icon">
+                    <img
+                      class="huge-iconinterfacesolidsear3"
+                      alt=""
+                      src="../public/hugeiconinterfacesolidsearch-41.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="login-top">
+              <b class="login-title">Password Changed Successfully</b>
+              <div class="login-title login-title-sec">
+                Your password has been updated successfully
+              </div>
+            </div>
+            <button id="opt-back-btn" class="otp-submit-btn">
+              Back to Login
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- END MODALS -->
+
+      <div id="modal-overlay__cart" class="modal-overlay">
+        <div id="mini-cart-sidebar">
+          <div class="item-wrapper">
+            <p>
+              You have <b><span id="num-items">2</span> items</b> in your cart
+            </p>
+            <div class="product-item" id="product-item-1">
+              <div class="product-item-img-wrapper">
+                <img class="side-bar-img" src="../public/image-16@2x.png" />
+              </div>
+              <div class="product-item-details">
+                <p class="product-item-title">Apple iPhone 14 Pro</p>
+                <p class="product-item-price"><b>$1999.00</b></p>
+                <div class="product-item-last-row">
+                  <p class="product-item-quantity">
+                    QTY: <span id="iphone-num">1</span>
+                  </p>
+                  <img
+                    class="trash-icon"
+                    id="trash-icon-id-1"
+                    src="../public/hugeiconinterfaceoutlinetrash.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="product-item" id="product-item-2">
+              <div class="product-item-img-wrapper">
+                <img class="side-bar-img" src="../public/image-25@2x.png" />
+              </div>
+              <div class="product-item-details">
+                <p class="product-item-title">Asus ROG Delta S</p>
+                <p class="product-item-price"><b>$250.00</b></p>
+                <div class="product-item-last-row">
+                  <p class="product-item-quantity">QTY: 1</p>
+                  <img
+                    class="trash-icon"
+                    id="trash-icon-id-2"
+                    src="../public/hugeiconinterfaceoutlinetrash.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mini-cart-buttom">
+            <div class="sub-total-div">
+              <p class="product-item-price"><b>SubTotal</b></p>
+              <p class="product-item-price"><b>$2249.00</b></p>
+            </div>
+            <div class="login-mid-down">
+              <div class="login-btn login-btn-light">View Cart</div>
+              <div id="checkout-btn-id" class="login-btn">Checkout</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/modal.js" type="text/javascript"></script>
+  <script src="../js/product.js" type="text/javascript"></script>
+</html>
