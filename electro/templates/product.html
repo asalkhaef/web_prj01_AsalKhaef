@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
-    <link rel="stylesheet" href="../css/product.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/review.css" />
-    <link rel="stylesheet" href="../css/modals.css" />
+    <link rel="stylesheet" href="{% static '/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/global.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/modals.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/product.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/reviewcss' %}" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -41,7 +42,8 @@
               </div>
               <div class="search-input-container">
                 <div class="icon-parent">
-                  <img class="search-icon" alt="" src="../public/-icon-1.svg" />
+                  <img class="search-icon" alt="" src="{% static
+                  "/public/-icon-1.svg" %}" />
 
                   <input class="search-text" placeholder="Search" type="text" />
                 </div>

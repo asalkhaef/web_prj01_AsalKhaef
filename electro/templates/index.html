@@ -5,13 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="{% static "/css/index.css" %}}" /> <link
-    rel="stylesheet" href="{% static "/css/global.css" %}}" /> <link
-    rel="stylesheet" href="{% static "/css/modals.css" %}}" /> {% comment %}
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/modals.css" />
-    {% endcomment %}
+    <link rel="stylesheet" href="{% static '/css/index.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/global.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/modals.css' %}" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -22,28 +19,19 @@
     <div class="home-page">
       <section class="main-top-section">
         <div class="main-top-section-child"></div>
-        <img class="mask-group-icon" alt="" src="../public/mask-group.svg" />
+        <img class="mask-group-icon" alt="" src="{% static "/public/mask-group.svg" %}" />
         <!--   ...................... START HEADER ............................ -->
         <header class="header">
           <form class="main-frame">
             <div class="logo-search-container">
               <div class="logo-container">
-                <img
-                  class="logo-text"
-                  loading="lazy"
-                  alt=""
-                  src="../public/logo--text.svg"
-                />
+                <img class="logo-text" loading="lazy" alt="" src="{% static "/public/logo--text.svg" %}" />
               </div>
               <div class="search-container">
                 <div class="search">
                   <div class="search-parent">
                     <div class="search-text">All</div>
-                    <img
-                      class="down-arrow-icon"
-                      alt=""
-                      src="../public/-icon.svg"
-                    />
+                    <img class="down-arrow-icon" alt="" src="{% static "/public/-icon.svg" %}" />
                   </div>
                 </div>
                 <div class="search-input-container">
@@ -170,12 +158,8 @@
             </div>
             <div class="poster-right-container">
               <div class="poster-right-img-container"></div>
-              <img
-                class="young-handsome-happy-smiling-m-icon"
-                loading="lazy"
-                alt=""
-                src="../public/younghandsomehappysmilingmandancinglisteningmusicheadphonesisolatedwhitestudiowall-1@2x.png"
-              />
+              <img class="young-handsome-happy-smiling-m-icon" loading="lazy"
+              alt="" src="{% static "/public/younghandsomehappysmilingmandancinglisteningmusicheadphonesisolatedwhitestudiowall-1@2x.png"%}" />
             </div>
           </div>
         </div>
@@ -196,11 +180,7 @@
                 src="../public/button@2x.png"
               />
 
-              <img
-                class="shop-by-category-arrow-icon"
-                alt=""
-                src="../public/button-1@2x.png"
-              />
+              <img class="shop-by-category-arrow-icon" alt="" src="{% static "/public/button-1@2x.png" %}" />
             </div>
           </div>
           <div class="products-categories">
@@ -208,12 +188,8 @@
               <div class="categories-inner">
                 <div class="category-frame-container">
                   <div class="category-frame"></div>
-                  <img
-                    class="categories-icon-image"
-                    loading="lazy"
-                    alt=""
-                    src="../public/image-9@2x.png"
-                  />
+                  <img class="categories-icon-image" loading="lazy" alt=""
+                  src="{% static "/public/image-9@2x.png" %}" />
                 </div>
               </div>
               <div class="categories-title">
@@ -224,12 +200,8 @@
               <div class="categories-inner">
                 <div class="category-frame-container">
                   <div class="category-frame"></div>
-                  <img
-                    class="categories-icon-image"
-                    loading="lazy"
-                    alt=""
-                    src="../public/image-11@2x.png"
-                  />
+                  <img class="categories-icon-image" loading="lazy" alt=""
+                  src="{% static "/public/image-11@2x.png" %}" />
                 </div>
               </div>
               <div class="categories-title">
@@ -1225,11 +1197,7 @@
                 src="../public/payment-methodamex.svg"
               />
 
-              <img
-                class="footer-last-icon"
-                alt=""
-                src="../public/payment-methodpaypal.svg"
-              />
+              <img class="footer-last-icon" alt="" src="{% static "/public/payment-methodpaypal.svg" %}" />
             </div>
             <div class="electro-all-rights">
               ©2023 Electro All Rights are reserved️
@@ -1244,9 +1212,7 @@
               <img
                 class="huge-iconarrowsoutlinedirec"
                 alt=""
-                src="../public/hugeiconsocialsolidinstagram@2x.png"
-              />
-
+                src="{% static '/public/instagram.png' %}"/>
               <img
                 class="huge-iconarrowsoutlinedirec"
                 alt=""
