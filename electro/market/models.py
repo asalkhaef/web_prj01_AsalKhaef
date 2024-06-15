@@ -170,7 +170,7 @@ class Product(models.Model):
 
 
 def media_upload_path(instance, filename):
-    return f"media/{instance.product.id}/{filename}"
+    return f"{instance.product.id}/{filename}"
 
 
 class Media(models.Model):

@@ -15,7 +15,7 @@ const cartBtn = document.getElementById("add-to-cart-button-id")
 const cartItemNum2 = document.getElementById("num-items")
 const iphoneNum = document.getElementById("iphone-num")
 
-
+console.log(productBasePrice)
 
 function openProductDescription(){
     for (let item of productTabContent) {

@@ -107,6 +107,7 @@
                   src="{% static '/public/hugeiconinterfacesolidsearch-3.svg' %}"
                 />
 
+                {%if user_logged_in != None %}
                 <div id="cart-icon" class="icon-with-number">
                   <img
                     class="huge-iconinterfacesolidsear"
@@ -119,6 +120,7 @@
                     <b class="number-of-cart">2</b>
                   </div>
                 </div>
+                {% endif %}
               </div>
             </div>
             <button id="login-button-mainpage" class="login-button">
@@ -158,8 +160,8 @@
             </div>
             <div class="poster-right-container">
               <div class="poster-right-img-container"></div>
-              <img class="young-handsome-happy-smiling-m-icon" loading="lazy"
-              alt="" src="{% static "/public/younghandsomehappysmilingmandancinglisteningmusicheadphonesisolatedwhitestudiowall-1@2x.png"%}" />
+              <img class="young-handsome-happy-smiling-m-icon" loading="lazy" src="{{ headBanner.image.url }}"
+               />
             </div>
           </div>
         </div>
@@ -319,7 +321,7 @@
             <div class="miss-container">
               <div class="miss-text">Don’t miss the last opportunity</div>
             </div>
-            <button id="link-product-page" class="shop-now-off-button" href= "{% url "product" %}">
+            <button id="link-product-page" class="shop-now-off-button" href= "#">
               <div class="shop-now-off-text">Shop Now</div>
               <div class="shop-now-off-arrow-icon">
                 <img
@@ -665,7 +667,7 @@
         <img
           class="mask-group-icon"
           alt=""
-          src="{% static '/public/mask-group-4@2x.png' %}"
+          src="{{ adBanner.image.url }}"
         />
 
         <div class="advertisement-taxt-container">
@@ -1229,6 +1231,9 @@
         <div class="modal-wrapper">
           <div class="modal-close-btn">X</div>
           <div id="modal-login" class="modal-card">
+            <form method="POST" action="" class="login-form">
+                {% csrf_token %}
+                <input type="hidden" name="type" value="login">
             <div class="login-top">
               <b class="login-title">Welcome 👋 </b>
               <div class="login-title login-title-sec">Please login here</div>
@@ -1239,13 +1244,13 @@
                   <div class="login-input">
                     <div class="login-label">Email Address</div>
                     <div class="login-textbox">
-                      <div class="login-text">kristin.watson@example.com</div>
+                      {{ login_form.username }}
                     </div>
                   </div>
                   <div class="login-input">
                     <div class="login-label">Password</div>
                     <div class="login-textbox">
-                      <div class="login-text">••••••••••••••••••</div>
+                      {{ login_form.password }}
                     </div>
                   </div>
                 </div>
@@ -1261,7 +1266,7 @@
                 </div>
               </div>
               <div class="login-mid-down">
-                <div class="login-btn">Login</div>
+                <button class="button-wrapper"><a type="submit" class="login-btn">Login</a></button>
                 <div id="register-btn" class="login-btn login-btn-light">
                   Register
                 </div>
@@ -1284,8 +1289,12 @@
                 <div class="signin-ways-btn2">Login with Apple</div>
               </div>
             </div>
+          </form>
           </div>
           <div id="modal-register" class="modal-card">
+            <form method="POST" action="" class="login-form">
+              {% csrf_token %}
+              <input type="hidden" name="type" value="signup">
             <div class="login-top">
               <b class="login-title">Create New Account</b>
               <div class="login-title2">Please enter details</div>
@@ -1296,19 +1305,25 @@
                   <div class="login-input">
                     <div class="login-label">Name</div>
                     <div class="login-textbox">
-                      <div class="login-text">Kristin Watson</div>
+                      {{ signup_form.username }}
                     </div>
                   </div>
                   <div class="login-input">
                     <div class="login-label">Email Address</div>
                     <div class="login-textbox">
-                      <div class="login-text">kristin.watson@example.com</div>
+                      {{ signup_form.email }}
                     </div>
                   </div>
                   <div class="login-input">
                     <div class="login-label">Password</div>
                     <div class="login-textbox">
-                      <div class="login-text">••••••••••••••••••</div>
+                      {{ signup_form.password1 }}
+                    </div>
+                  </div>
+                  <div class="login-input">
+                    <div class="login-label">Confirm Password</div>
+                    <div class="login-textbox">
+                      {{ signup_form.password2 }}
                     </div>
                   </div>
                 </div>
@@ -1322,9 +1337,9 @@
                   </div>
                 </div>
               </div>
-              <div class="button-wrapper">
-                <div class="login-btn login-btn-white">Register</div>
-              </div>
+              <button class="button-wrapper">
+                <a type="submit" class="login-btn login-btn-white">Register</a>
+              </button>
             </div>
             <div class="or-login-with-container">
               <div class="or-login-line"></div>
@@ -1343,6 +1358,7 @@
                 <div class="signin-ways-btn2">Login with Apple</div>
               </div>
             </div>
+          </form>
           </div>
           <div id="modal-otp" class="modal-card">
             <div class="login-top">
