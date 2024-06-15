@@ -1,10 +1,13 @@
+from typing import Any
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.http import HttpRequest
+from django.http.response import HttpResponse as HttpResponse
 from .forms import CustomUserCreationForm
 from django.contrib.auth import login, authenticate
 from django.urls import reverse
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
-from .models import Banner
+from .models import Product
 from django.contrib.sessions.models import Session
 
 
@@ -72,6 +75,12 @@ class HomePageView(TemplateView):
 
 class ProductPageView(TemplateView):
     template_name = 'product.html'
+
+    def get(self, request: HttpRequest, *args: Any, **kwargs: Any) -> HttpResponse:
+        prodcutId = kwargs['id']
+        seletced_product = Product.objects.get(id=prodcutId)
+        print(seletced_product)
+        return render(request, self.template_name, context={"product": seletced_product})
 
 # def login_view(request):
 #     login_form = AuthenticationForm(data=request.POST)

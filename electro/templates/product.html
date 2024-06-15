@@ -144,7 +144,7 @@
                       src="{% static '/public/hugeiconarrowssoliddirectionright-01.svg' %}"
                     />
                   </div>
-                  <div class="home-add">Apple iPhone 14 Pro</div>
+                  <div class="home-add">{{ product.title }}</div>
                 </div>
                 <div class="product-images-container">
                   <div class="main-image">
@@ -200,7 +200,7 @@
                 <div class="product-detail-right-text-container">
                   <div class="product-detail-right-top">
                     <div class="product-detail-right-top-left">
-                      <h2 class="product-detail-title">Apple iPhone 14 Pro</h2>
+                      <h2 class="product-detail-title"> {{ product.title }} </h2>
                       <div class="product-detail-rate-price-price">
                         <div class="product-detail-rate">
                           <div class="product-detail-rate-star">
@@ -238,30 +238,26 @@
                             </div>
                           </div>
                           <div class="reviews">
-                            <span class="review-num">5.0 (121 Reviews)</span>
+                            <span class="review-num">{{ product.rating }} (121 Reviews)</span>
                           </div>
                         </div>
-                        <div class="product-detail-price">$1999.00</div>
+                        <div class="product-detail-price" data-base-price="{{ product.get_latest_price }}">{{ product.get_latest_price }}</div>
                       </div>
                     </div>
                     <button class="button20">In Stock</button>
                   </div>
                   <div class="product-detail-info">
                     <div class="product-detail-info-text">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution.
+                      {{ product.description }}
                     </div>
                   </div>
                   <div class="product-detail-right-middle">
                     <b class="color">Color</b>
                     <div class="color-right">
                       <div class="color-options">
-                        <div class="color-option color1"></div>
-                        <div class="color-option color2"></div>
-                        <div class="color-option color3"></div>
-                        <div class="color-option color4"></div>
+                        {% for color in product.colors.all %}
+                        <div class="color-option color1" data-price="{{ color.extra_cost }}" style="background-color:{{ color.hex_code }}"></div>
+                        {% endfor %}
                       </div>
                       <div class="product-request">
                         <div class="request-count">

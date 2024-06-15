@@ -35,7 +35,12 @@ admin.site.register(User, CustomUserAdmin)
 
 
 # Register your models here.
+admin.site.register(Cart)
+admin.site.register(CartItem)
+admin.site.register(Discount)
 admin.site.register(Product)
+admin.site.register(Media)
+admin.site.register(ProductPriceHistory)
+admin.site.register(Color)
 admin.site.register(Category)
-# admin.site.register(User)
 admin.site.register(Banner)

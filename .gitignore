@@ -2,7 +2,7 @@ env
 .env
 djangoenv
 
-__pycahce__/
+__pycache__/
 .vscode
 
 db.sqlite3

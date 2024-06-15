@@ -7,6 +7,7 @@ const blueLine = document.getElementsByClassName("data-divider-blue-line")[0]
 
 const productPrice = document.getElementsByClassName("product-detail-price")[0]
 const productColor = document.getElementsByClassName("color-option")
+const productBasePrice = document.querySelector(".product-detail-price")
 
 const cartNumber = document.getElementsByClassName("number-of-cart")[0]
 const cartBtn = document.getElementById("add-to-cart-button-id")
@@ -79,14 +80,8 @@ reviewBtn.addEventListener("click", openProductReview)
 // change price based on color!
 for (let item of productColor) {
     item.addEventListener("click", (event) => {
-        if(event.target.classList[1] == "color1")
-            productPrice.innerHTML = "$1999.00"
-        else if (event.target.classList[1] == "color2")
-            productPrice.innerHTML = "$1800.00"
-        else if (event.target.classList[1] == "color3")
-            productPrice.innerHTML = "$1700.00"
-        else if (event.target.classList[1] == "color4")
-            productPrice.innerHTML = "$1600.00"
+        const priceToSet = Number(event.target.dataset.price) + Number(productBasePrice.dataset.basePrice)
+        productPrice.innerHTML = priceToSet.toFixed(2)
     })
 }
 
