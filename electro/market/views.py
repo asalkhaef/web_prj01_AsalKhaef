@@ -1,7 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .forms import CustomUserCreationForm
 from django.contrib.auth import login, authenticate
-from django.urls import reverse_lazy
+from django.urls import reverse
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
 from .models import Banner
@@ -67,8 +67,11 @@ class HomePageView(TemplateView):
         # In this case, redirect to the success URL or render the template with initial context
 
     def get_success_url(self):
-        return reverse_lazy('home')
+        return reverse('home')
 
+
+class ProductPageView(TemplateView):
+    template_name = 'product.html'
 
 # def login_view(request):
 #     login_form = AuthenticationForm(data=request.POST)
