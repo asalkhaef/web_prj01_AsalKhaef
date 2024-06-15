@@ -1,0 +1,9 @@
+env
+.env
+djangoenv
+
+__pycahce__/
+.vscode
+
+db.sqlite3
+electro/media/
