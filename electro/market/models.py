@@ -1,5 +1,11 @@
-from django.db import models
+# models.py
+from datetime import timezone
 
+from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+from django.contrib.auth.models import PermissionsMixin
+from django.db import models
+from django.contrib.auth import get_user_model
+User = get_user_model()
 # Create your models here.
 
 
@@ -60,13 +66,13 @@ class PriceHistory(models.Model):
         return f"{self.product} - {self.price} ({self.timestamp})"
 
 
-class User(models.Model):
-    username = models.CharField(max_length=100)
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=128)
+# class User(models.Model):
+#     username = models.CharField(max_length=100)
+#     email = models.EmailField(unique=True)
+#     password = models.CharField(max_length=128)
 
-    def __str__(self):
-        return f"{self.username}"
+#     def __str__(self):
+#         return f"{self.username}"
 
 
 class Cart(models.Model):
